@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>DOM</title>
+    <style>
+        .image{
+            border: 1px solid red;
+        }
+        .mnj{
+            border: 1px solid yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="boxes">
+        <div id="box">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" height="200">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sint aliquam minus qui aut
+                    laboriosam adipisci provident iure. Nostrum voluptatibus dolorum, corrupti deleniti necessitatibus
+                    quo rerum natus iste reiciendis laborum, impedit ex aliquid hic asperiores aut, excepturi quaerat
+                    mos ipsa, architecto enim a? Molestiae.
+                </p>
+            </div>
+        </div>
+        <div id="box">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" height="200">
+
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sint aliquam minus qui aut
+                    laboriosam adipisci provident iure. Nostrum voluptatibus dolorum, corrupti deleniti necessitatibus
+                    quo rerum natus iste reiciendis laborum, impedit ex aliquid hic asperiores aut, excepturi quaerat
+                    mos ipsa, architecto enim a? Molestiae.
+                </p>
+            </div>
+        </div>
+        <div id="box">
+            <div class="image">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="" height="200">
+
+            </div>
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sint aliquam minus qui aut
+                    laboriosam adipisci provident iure. Nostrum voluptatibus dolorum, corrupti deleniti necessitatibus
+                    quo rerum natus iste reiciendis laborum, impedit ex aliquid hic asperiores aut, excepturi quaerat
+                    mos ipsa, architecto enim a? Molestiae.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // parentElement,
+        // childElement (chlidren),
+        // childElementCount,
+        // nextElementSibling,
+        // previousElementSibling,
+        // childElementCount,
+
+        // ===============================================
+
+        // console.log(document.querySelector('.image').parentElement);
+        // console.log(document.querySelector('#box').children);
+        // console.log(document.querySelector('#boxes').childElementCount);
+        // console.log(document.querySelector('.image').nextElementSibling);
+        // console.log(document.querySelector('.content').previousSibling);
+
+        // ====================================================
+
+        // let arr = document.querySelectorAll('.image')
+        // arr.forEach((item)=>{
+        //     console.log(item);
+        // })
+
+        // ===================================================
+
+        // let arr = [10,10,10.2,50]
+        // arr.forEach((item)=>{
+        //     document.write(`${item}`+'<br>')
+        // })
+        // ========================================================
+
+        // add css class by using javascript
+
+        // let image = document.querySelectorAll('.image')
+        // image.forEach((item)=>item.classList.add('mnj'))
+
+        // remove class by using js
+
+        let image=document.querySelectorAll('.image')
+        image.forEach((item)=>{item.classList.remove('image')})
+       
+
+        
+    </script>
+</body>
+
+
+
+</html>
