@@ -1,0 +1,256 @@
+<html>
+    <head>
+        <title>OOPs</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+
+
+        <script>
+
+            // ========Basic Syntex==============
+            // class student{
+            //     // some property
+            // }
+
+            // =============== Class with Method,oject,reference =========
+
+        //     class student{
+        //         csd(){
+        //             // some property
+        //         }
+        //     }
+        //    s=new student() 
+           //  we are create object by new keyword in javascript 
+           //  and s is reference variable
+
+          //=================class with constractor , method=================
+
+        //   class student{
+        //     constructor(){
+        //         console.log('constructor');
+        //     }
+        //     csd(){
+        //         console.log('Method');
+        //     }
+        //   }
+        //   s = new student()
+        //   s.csd()   // treat static method
+        //   new student.csd() // treat class method
+
+        // ============================================
+
+        //   class student{
+        //     constructor(){
+        //         console.log('constructor');
+        //     }
+        //     csd(){
+        //         console.log('Method');
+        //     }
+        //   }
+        //   new student().csd()
+
+        // ===============================================
+
+        // class student{
+        //     constructor(){
+        //         this.name = 'Mnaoj'
+        //         this.rollno=10
+        //     // this is a reference variable 
+        //     //automatically comes on object creating time
+
+        //     }
+        // }
+
+        // r = new student()
+        // console.log(r.name , r.rollno);
+
+        // ======================= Instance Variable =========================
+
+        // class student{
+        //     constructor(name,rollno){
+        //         this.name = name
+        //         this.rollno = rollno
+        //     }
+        // }
+        // s =new student('Manoj',1)
+        // s1 =new student('Ankit',2)
+        // console.log(s.name,s.rollno);
+        // console.log(s1.name,s1.rollno);
+
+        // ======================== Static Variable ==================
+
+        // class student{
+        //     static cname = 'cpt'
+        //     constructor(){
+        //         this.name = 'Manoj'
+        //         this.rollno = 1
+        //     }
+        // }
+        // s=new student()
+        // console.log(student.cname); // 
+        // console.log(s.cname);  // undefine
+
+
+        // ============== Instance Method ==================
+
+        // class student{
+        //     static cname = 'cpt'
+        //     // name = 'Manoj' it is instance variable
+        //     constructor(name,rollno){
+        //         this.name=name
+        //         this.rollno=rollno
+        //     }
+        //     info(cls){
+        //         console.log(this.name +' '+this.rollno);
+        //     }
+        // }
+        // s=new student('Manoj',1)
+        // s1=new student('Ankit',2)
+        // s.info()
+        // s1.info()
+        // student.collageInfo()
+        
+        // =============Static Method=========================
+
+        // class student{
+        //     static cname = 'CPT'
+        //     constructor(name,rollno){
+        //         this.name=name
+        //         this.rollno=rollno
+        //         // console.log(this.name,this.rollno);
+        //         console.log('Constructor');
+        //     }
+        //     static collageInfo(){
+        //         console.log(student.cname);
+        //     }
+        // }
+       
+        // student.collageInfo() // CPT
+
+
+        // ====================Inheritance===================
+
+        // class parent{
+        //     static cname = 'CPT'
+        //     constructor(name,rollno){
+        //         this.name=name
+        //         this.rollno=rollno
+        //     }
+        //     info(){
+        //         console.log(this.name+' '+this.rollno);
+        //     }
+        // }
+        // class child extends parent{
+        //     static collageInfo(){
+        //         console.log(parent.cname);
+        //     }
+        // }
+        
+        // c= new child('Manoj',1)
+        // c.info()
+        // console.log(c.name, c.rollno);
+        // child.collageInfo()
+
+        // =================Simple Inheritance=================
+
+        // class student{
+        //     static x=10
+        // }
+        // class student1 extends student{
+        //     static y = 20
+        // }
+        // console.log(student1.x); // 10
+        // console.log(student.x);  // 10
+        // console.log(student1.y); // 20
+        // console.log(student.y);  // undefine
+
+        // ===================MultiLevel=============
+
+        // class student{
+        //     static x=10
+        // }
+
+        // class student1 extends student{
+        //     static y=20
+        // }
+
+        // class student2 extends student1{
+        //     static z = 30
+        // }
+
+        // class student3 extends student2{
+        //     static p = 40
+        // }
+
+        // class student4 extends student3{
+        //     static q = 50
+        // }
+
+
+        // console.log(student4.x);
+        // console.log(student4.y);
+        // console.log(student4.z);
+        // console.log(student4.p);
+        // console.log(student4.q);
+    
+        // ================Multiple (Not Support)=================
+
+        // class student{
+        //     static x = 10
+        // }
+        // class student1 extends student{
+        //     static y = 20
+            
+        // }
+        // class student2 extends student,student1{
+
+        // }
+
+        // =====================hierarichical Inheritance===============
+
+        // class student{
+        //     static x = 10
+        // }
+
+        // class student1 extends student{
+        //     static y = 20
+        // }
+
+        // class student2 extends student{
+        //     static z = 30
+        // }
+
+        // console.log(student1.x , student1.y);
+        // console.log(student2.x , student2.z);
+        // console.log(student2.x , student2.z , student1.z);
+
+        // ===================Hybrid Inheritance======================
+
+        // any combination of simple,mullevel,hierarichal Inheritance
+
+
+        // =================Cyclic Inheritance (Not Support)============
+
+        // class A extends A{
+        //     static x = 20
+        // }
+
+        // console.log(A.x); // error
+
+        
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

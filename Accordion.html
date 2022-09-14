@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Accordion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body {
+            background: rgb(159, 237, 159);
+        }
+        #master {
+            width: 50%;
+            margin: 0 auto;
+
+        }
+        #master .head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:0 0.5rem;
+            margin-top: 1rem;
+        }
+        #master .head i:hover{
+            transform: scale(1.2);
+            transition:  0.5s;
+            cursor: pointer;
+        }
+        #master .head{
+            background: rgb(237, 180, 180);
+        }
+        #master .para{
+            display: none;
+            padding: 1rem;
+            border-bottom:2px solid red;
+            border-left:2px solid red;
+            border-right:2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="master">
+        <div class="head">
+            <h1>Accordion 1</h1>
+            <i class="fas fa-plus-circle"></i>
+            <!-- <i class="fas fa-minus-circle"></i> -->
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, id tempore. Quae harum, reiciendis, amet accusamus tempora libero facere quia illum iusto rem dignissimos laborum officia magnam at sit dolorum aspernatur quo. Facere accusamus unde adipisci sint, labore illum praesentium.</p>
+        </div>
+
+        <div class="head">
+            <h1>Accordion 2</h1>
+            <i class="fas fa-plus-circle"></i>
+            <!-- <i class="fas fa-minus-circle"></i> -->
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, id tempore. Quae harum, reiciendis, amet accusamus tempora libero facere quia illum iusto rem dignissimos laborum officia magnam at sit dolorum aspernatur quo. Facere accusamus unde adipisci sint, labore illum praesentium.</p>
+        </div>
+
+        <div class="head">
+            <h1>Accordion 3</h1>
+            <i class="fas fa-plus-circle"></i>
+            <!-- <i class="fas fa-minus-circle"></i> -->
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, id tempore. Quae harum, reiciendis, amet accusamus tempora libero facere quia illum iusto rem dignissimos laborum officia magnam at sit dolorum aspernatur quo. Facere accusamus unde adipisci sint, labore illum praesentium.</p>
+        </div>
+
+        <div class="head">
+            <h1>Accordion 4</h1>
+            <i class="fas fa-plus-circle"></i>
+            <!-- <i class="fas fa-minus-circle"></i> -->
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, id tempore. Quae harum, reiciendis, amet accusamus tempora libero facere quia illum iusto rem dignissimos laborum officia magnam at sit dolorum aspernatur quo. Facere accusamus unde adipisci sint, labore illum praesentium.</p>
+        </div>
+    </div>
+
+    <script>
+
+        let i = document.querySelectorAll('i')
+        i.forEach((item)=>{
+            item.onclick=(curr)=>{
+                console.log(curr);
+                if(curr.target.classList.contains('fa-plus-circle')){
+                    curr.target.parentElement.nextElementSibling.style.display='block'
+                    curr.target.classList.remove('fa-plus-circle')
+                    curr.target.classList.add('fa-minus-circle')
+                }
+                else{
+                    curr.target.parentElement.nextElementSibling.style.display='none'
+                    curr.target.classList.remove('fa-minus-circle')
+                    curr.target.classList.add('fa-plus-circle')
+                }
+            }
+        })
+
+        
+        
+    </script>
+</body>
+
+</html>
